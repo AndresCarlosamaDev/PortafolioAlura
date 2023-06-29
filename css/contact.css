@@ -1,0 +1,272 @@
+/*Contacto*/
+section.formcontato {
+    width: calc(100% - 100px);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-content: center;
+    background-color: #1e1e1c;
+    padding: 7rem 3rem 5rem;
+    justify-content: center;
+    border-top-right-radius: 90px;
+    border-top-left-radius: 90px;
+}
+
+.formcontato__contacto {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formcontato--esquerda {
+    margin-right: 1.5rem;
+}
+
+.formcontato__img {
+    border-radius: 15px;
+    width: 22rem;
+}
+
+.formcontato__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.formcontato__subtext {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.2rem;
+    width: 40.5vw;
+}
+
+.formcontato__form__container {
+    width: 40.5vw;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.formcontato__form .formcontato__input,
+.formcontato__form .formcontato__textarea {
+    border: none;
+    border-bottom: 2px solid #312e2e36;
+    border-radius: 5px;
+    height: 2.5rem;
+    padding: 10px 7px 0;
+    outline: none;
+}
+
+.formcontato__textarea:focus {
+    outline: none;
+    border-bottom: 3px solid #22c1c3;
+}
+
+.formcontato__input:focus {
+    outline: none;
+    border-bottom: 3px solid #22c1c3;
+}
+
+.formcontato__form label {
+    opacity: 50%;
+    font-size: 1rem;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    color: #000000cc;
+    transform: top .3s;
+    padding: 1px 5px;
+    transition: 0.2s all ease-in-out;
+}
+
+.formcontato__form input:focus~label,
+.formcontato__form textarea:focus~label {
+    top: 5px;
+    font-size: 12px;
+    opacity: 100%;
+    background-color: white;
+    color: #2A7AE4;
+}
+
+.formcontato__textarea {
+    font-size: 1rem;
+    resize: none;
+}
+
+.formcontato__form__container--textarea {
+    margin-top: 1rem;
+    position: relative;
+}
+
+.formcontato__form__container--textarea textarea {
+    width: 40vw;
+    height: 7.5rem;
+    padding-top: 20px;
+}
+
+.formcontato__botao {
+    background: #22c1c3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fdbb2d, #22c1c3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fdbb2d, #22c1c3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+    width: 150px;
+    height: 51px;
+    color: #464646;
+    cursor: pointer;
+    transition: .3s all linear;
+}
+
+.formcontato__botao:hover {
+    background: #fdbb2d;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    border: none;
+    width: 150px;
+    height: 51px;
+}
+----------------ERRORS------------------------
+
+.formcontato__form .formcontato__input--error,
+.formcontato__form .formcontato__textarea--error {
+    border-bottom: 2px solid red !important;
+}
+
+.formcontato__form .formcontato__input--error {
+    border-bottom: 2px solid red !important;
+}
+
+.form__span {
+    display: none !important;
+    color: red;
+    padding-top: 0.3rem;
+}
+
+.form__input--error {
+    display: block;
+    color: red;
+    padding-top: 0.3rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* 1200px */
+@media screen and (max-width: 1200px) {
+    /* Formulario */
+    section.formcontato {
+        width: calc(100% - 100px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .formcontato__img {
+        display: none;
+    }
+
+    .formcontato__subtext {
+        /* font-size: 1rem; */
+        width: 82vw;
+    }
+
+    .formcontato__form__container {
+        justify-content: center;
+        width: 80vw;
+    }
+
+    .formcontato__form__container--textarea textarea {
+        width: 78vw;
+        justify-content: center;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    /*Contacto*/
+    section.formcontato {
+        width: calc(100% - 100px);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5rem 3rem 5rem;
+        justify-content: center;
+    }
+
+    .formcontato__img {
+        display: none;
+    }
+
+    .formcontato__title {
+        font-size: 1.3rem;
+    }
+
+    .formcontato__subtext {
+        font-size: 1rem;
+        width: 82vw;
+    }
+
+    .formcontato__form__container {
+        justify-content: center;
+        width: 80vw;
+    }
+
+    .formcontato__form__container--textarea textarea {
+        width: 78vw;
+        justify-content: center;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/*Mobile*/
+@media screen and (max-width: 425px) {
+    /*Contacto*/
+    section.formcontato {
+        width: 100vw;
+        position: relative;
+        top: 0;
+        left: -3vw;
+        padding: 3rem 0 3rem;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        justify-content: center;
+    }
+
+    .formcontato--esquerda {
+        margin-right: 0rem;
+    }
+
+    .formcontato__title {
+        font-size: 1.7rem;
+    }
+
+    .formcontato__subtext {
+        /* margin: 0.2rem; */
+        width: 82vw;
+    }
+
+    .formcontato__form__container {
+        justify-content: center;
+        width: 82.5vw;
+    }
+
+    .formcontato__form__container--textarea textarea {
+        width: 79.5vw;
+        justify-content: center;
+    }
+}

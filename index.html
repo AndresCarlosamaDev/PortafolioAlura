@@ -7,6 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Referencia de la hoja de estilo de Css -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/title.css">
+    <link rel="stylesheet" href="/css/about_me.css">
+    <link rel="stylesheet" href="/css/skills.css">
+    <link rel="stylesheet" href="/css/hobbies.css">
+    <link rel="stylesheet" href="css/formacion.css">
+    <link rel="stylesheet" href="css/experiencia.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fonte del Proyecto Raleway -->
@@ -263,20 +273,24 @@
                         lo antes posible. </h3>
                     <form class="formcontato__form" name="form">
                         <div class="formcontato__form__container">
-                            <input class="formcontato__input" type="text" name="nombre">
+                            <input class="formcontato__input" type="text" name="nombre" required data-tipo="nombre">
                             <label for="">Nombre</label>
+                            <span class="form__span" data-tipo="span-nombre">Este campo no es valido</span>
                         </div>
                         <div class="formcontato__form__container">
-                            <input class="formcontato__input" type="email" name="email">
+                            <input class="formcontato__input" type="email" name="email" required data-tipo="email">
                             <label for="">E-mail</label>
+                            <span class="form__span" data-tipo="nombre">Este campo no es valido</span>
                         </div>
                         <div class="formcontato__form__container">
-                            <input class="formcontato__input" type="text" name="asunto">
+                            <input class="formcontato__input" type="text" name="asunto" required data-tipo="asunto">
                             <label for="">Asunto</label>
+                            <span class="form__span" data-tipo="nombre">Este campo no es valido</span>
                         </div>
                         <div class="formcontato__form__container--textarea">
-                            <textarea class="formcontato__textarea" cols="80" id="mensagem" name="mensaje"></textarea>
+                            <textarea class="formcontato__textarea" cols="80" id="mensagem" name="mensaje" maxlength="250" required data-tipo="mensaje"></textarea>
                             <label for="">Mensaje</label>
+                            <span class="form__span" data-tipo="nombre">Este campo no es valido</span>
                         </div>
                         <button type="submit" class="formcontato__botao">Enviar mensaje</button>
                     </form>

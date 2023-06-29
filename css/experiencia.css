@@ -1,0 +1,132 @@
+/* experiencia*/
+section.experience {
+    padding: 3rem 0 0;
+}
+
+.experience__section__title {
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+.experiencie__box {
+    display: flex;
+    margin: 4rem 0;
+    flex-wrap: wrap;
+}
+
+/* DISEÑO REFLEJADO */
+.experiencie__box:nth-child(odd) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+/* --------------------------- */
+.experience__img {
+    margin-right: 1.5rem;
+}
+
+.experience__info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0;
+}
+
+.experience__title {
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.experience__text {
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.experience__description {
+    display: flex;
+}
+
+.experience__repo {
+    margin-right: 0.5rem;
+}
+
+.experiencia__botao--repo {
+    background-color: white;
+    font-size: 1rem;
+    border-radius: 7px;
+    font-weight: 400;
+    color: white;
+    border: none;
+    width: 105px;
+    height: 51px;
+    background-color: #1e1e1c;
+    /* border: 1px solid #1e1e1c; */
+    cursor: pointer;
+}
+
+.experience__botao--demo {
+    background-color: #fdbb2d;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    width: 105px;
+    height: 51px;
+    color: black;
+    cursor: pointer;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* 1200px */
+@media screen and (max-width: 1200px) {}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    /*Experiencia Profesional*/
+    .experience__section__title {
+        font-size: 1.3rem;
+    }
+
+    .experience__title {
+        font-size: 1rem;
+    }
+
+    .experience__text {
+        font-size: 0.8rem;
+    }
+
+    .experiencie__box {
+        margin: 1.5rem 0 3rem;
+        /*Cancela el margen de arriba*/
+    }
+
+    .experiencie__box:nth-child(odd) {
+        flex-direction: row;
+    }
+
+    .experience__img {
+        margin-right: 0rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/*Mobile*/
+@media screen and (max-width: 425px) {}
