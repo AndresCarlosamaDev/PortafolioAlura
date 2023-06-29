@@ -104,6 +104,9 @@ section.formcontato {
 }
 
 .formcontato__form__container--textarea textarea {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
     width: 40vw;
     height: 7.5rem;
     padding-top: 20px;
@@ -137,27 +140,30 @@ section.formcontato {
     width: 150px;
     height: 51px;
 }
-----------------ERRORS------------------------
 
-.formcontato__form .formcontato__input--error,
-.formcontato__form .formcontato__textarea--error {
-    border-bottom: 2px solid red !important;
+--------------------ERRORES_2--------------------------
+.input-container--invalid {
+    margin-bottom: 0.5rem;
 }
 
-.formcontato__form .formcontato__input--error {
-    border-bottom: 2px solid red !important;
+.input-container--invalid .formcontato__input,
+.input-container--invalid .formcontato__textarea {
+    border: 1px solid red;
 }
 
-.form__span {
-    display: none !important;
+.input-container--invalid .formcontato__label {
     color: red;
-    padding-top: 0.3rem;
 }
 
-.form__input--error {
+.input-message-error {
+    display: none;
+}
+
+.input-container--invalid .input-message-error {
+    color: red;
     display: block;
-    color: red;
-    padding-top: 0.3rem;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -165,6 +171,7 @@ section.formcontato {
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* 1200px */
 @media screen and (max-width: 1200px) {
+
     /* Formulario */
     section.formcontato {
         width: calc(100% - 100px);
@@ -197,6 +204,7 @@ section.formcontato {
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /*Tablet*/
 @media screen and (max-width: 768px) {
+
     /*Contacto*/
     section.formcontato {
         width: calc(100% - 100px);
@@ -235,6 +243,7 @@ section.formcontato {
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /*Mobile*/
 @media screen and (max-width: 425px) {
+
     /*Contacto*/
     section.formcontato {
         width: 100vw;

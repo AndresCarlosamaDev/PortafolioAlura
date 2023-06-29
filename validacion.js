@@ -14,18 +14,18 @@ txtArea.addEventListener('blur', (input) => {
 
 function validar(input) {
     if (input.validity.valid) {
-        input.classList.remove('formcontato__input--error');
+        input.parentElement.classList.remove('input-container--invalid');
     } else {
-        input.classList.add('formcontato__input--error');
+        input.parentElement.classList.add('input-container--invalid');
     }
     
 }
 
 function validarTextBox(input) {
     if (input.validity.valid) {
-        input.classList.remove('formcontato__textarea--error');
+        input.parentElement.classList.remove('input-container--invalid');
     } else {
-        input.classList.add('formcontato__textarea--error');
+        input.parentElement.classList.add('input-container--invalid');
         
     }
 }
